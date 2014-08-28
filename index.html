@@ -2,16 +2,26 @@
     <head>
         <script>
         
-            var pass = prompt("Lösen: ");  
-          
-            if(pass == "ada" || pass == "morre"){
-                alert("inloggad Amatör");
-            }else if(pass == "admin");{
-                alert("inloggad admin");
-            } else {
-                alert("FEL");
-            }
-                
+        var age = prompt("ålder: "), film;
+            
+        if(age < 7){    
+            film = "pettson och findus";
+        }else if(age < 14){
+            film = "frost";
+        }else{
+            film = "Game of thrones";  
+        }
+        if (age < 21){
+            film = "Borat"
+        }
+        if (age = 21){
+            film="Bruno"
+        }
+            
+            
+        
+        alert("Rekommenderad film: " + film);  
+            
         </script>
     </head>
     <body>
